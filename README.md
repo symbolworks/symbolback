@@ -68,17 +68,17 @@ Now we may end the application session knowing that - under under condition that
 
 When we open a new session on the above persistent data, to traverse over elements, we may send a series of actions responding with new states:
 
-State: `(STATE (CTX "TASKS") (ACTIONS next first last insert update delete))`
-Action: `next`:
-State: `(STATE (CTX list) (ACTIONS next first last insert delete enter))`
-Action: `enter`
-State: `(STATE (CTX "TASK") (ACTIONS next first last insert update delete))`
-Action: `next`
-State: `(STATE (CTX "2026-09-08") (ACTIONS previous next first last insert update delete))`
-Action: `next`
-State: `(STATE (CTX "10:00") (ACTIONS previous next first last insert update delete))`
-Action: `next`
-State: `(STATE (CTX "Go to dentist") (ACTIONS previous next first last insert update delete))`
+State: `(STATE (CTX "TASKS") (ACTIONS next first last insert update delete))`  
+Action: `next`  
+State: `(STATE (CTX list) (ACTIONS next first last insert delete enter))`  
+Action: `enter`  
+State: `(STATE (CTX "TASK") (ACTIONS next first last insert update delete))`  
+Action: `next`  
+State: `(STATE (CTX "2026-09-08") (ACTIONS previous next first last insert update delete))`  
+Action: `next`  
+State: `(STATE (CTX "10:00") (ACTIONS previous next first last insert update delete))`  
+Action: `next`  
+State: `(STATE (CTX "Go to dentist") (ACTIONS previous next first last insert update delete))`  
 
 We just traversed our persistent data without changing anything. Just to prepare the backend state for further operations, we may return to the beginning state:
 
