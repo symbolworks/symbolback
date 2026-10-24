@@ -82,10 +82,10 @@ State: `(STATE (CTX "Go to dentist") (ACTIONS previous next first last insert up
 
 We just traversed our persistent data without changing anything. Just to prepare the backend state for further operations, we may return to the beginning state:
 
-Action: `exit`
-State: `(STATE (CTX list) (ACTIONS next first last insert delete enter))`
-Action: `first`
-State: `(STATE (CTX "TASKS") (ACTIONS next first last insert update delete))`
+Action: `exit`  
+State: `(STATE (CTX list) (ACTIONS next first last insert delete enter))`  
+Action: `first`  
+State: `(STATE (CTX "TASKS") (ACTIONS next first last insert update delete))`  
 
 And we are back where we started from after finishing entering the the data.
 
