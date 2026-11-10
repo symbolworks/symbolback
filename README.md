@@ -62,7 +62,7 @@ Lastly, we send the actions:
 
 to return to the root list. 
 
-Now we may end the application session knowing that - under under condition that the data stays intact from the third side - the same data will be waiting for us next time we open a new session.
+Now we may end the application session knowing that - under condition that the data stays intact from the third side - the same data will be waiting for us next time we open a new session.
 
 ### reading the data
 
